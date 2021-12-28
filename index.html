@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
-    
     <title>Frontend Mentor | Stats preview card component</title>
-
   </head>
   <body>
-    <div class="main">
-      <h1>Get <span class="insights">insights</span> that help your business grow.</h1>
+    <main>
+      
+        <h1>Get <span class="accent">insights</span> that help your business grow.</h1>
 
-      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        
+        <dl>
+          <dt>10k+</dt>
+          <dt>314</dt>
+          <dt>12m+</dt>
+          <dd>companies</dd>
+          <dd>templates</dd>
+          <dd>queries</dd>
+        </dl>
       
-      <ul>
-        <li>10k+ companies</li>
-        <li>314 templates</li>
-        <li>12m+ queries</li>
-      </ul>
-      
-      <img src="images/image-header-desktop.jpg" alt="An office full of happy people">
-    </div>
+        <div class = "img-container">
+          <img src="images/image-header-desktop.jpg" alt="An office full of happy people">
+          <div class = "overlay"></div>
+        </div>
+    </main>
     
 
-    <div class="attribution">
-      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Filip Stupka</a>.</p>
-    </div>
+    <footer>
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer-link">Frontend Mentor</a>. Coded by <a href="#" class="footer-link">Filip Stupka</a>.</p>
+    </footer>
   </body>
 </html>
