@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 3em 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    background-color: rgb(9, 11, 26);
+    color: #fff;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* typography */
+
+.article-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.article-title-accent {
+    color: rgb(170, 92, 219);
+}
+
+.article-body {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.article-data-par {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.article-data-span {
+    font-size: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+
+.footer-link {
+    color: rgb(170, 92, 219);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: blueviolet;
+}
+
+/* layout */
+
+.article {
+    background-color: rgb(27, 25, 56);
+    width: 90%;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.article-img-background {
+    background-color: rgb(170, 92, 219);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    flex-basis: 300px;
+}
+
+.article-img {
+    object-fit: cover;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.article-content {
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer {
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 650px) {
+    body {
+        text-align: start;
+    }
+
+    .article {
+        flex-direction: row;
+    }
+
+    .article-title {
+        font-size: 2.5rem;
+    }
+
+    .article-body {
+        font-size: 1rem;
+    }
+
+    .article-data {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+    .article-data-par {
+        font-size: 1.6rem;
+    }
+
+    .article-img-background {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        flex-basis: 100%;
+    }
+}
